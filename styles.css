@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FDB9C8;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  position: absolute;
+  background-color: #ec5578;
+  border-radius: 25px;
+}
+
+#yesButton {
+  left: 50%; /* Position "Yes" button at the center horizontally */
+  transform: translateX(-50%);
+}
+
+#noButton {
+  left:25%; /* Position "No" button at the left edge initially */
+  transition: left 0.5s; /* Add a smooth transition effect */
+}
+
+#noButton:hover {
+  left: calc(100% - 100px); /* Move "No" button to the right edge on hover */
+}
