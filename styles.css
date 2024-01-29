@@ -1,12 +1,27 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Willkids'
+}
+html,body{
+height:100%;
+width:100%;
+}
 body {
   margin: 0;
+  padding: 0;
+  background-color: rgb(79, 215, 215); /* Replace 'your-image-url.jpg' with the actual path to your image */
+  background-size:contain; /* This property ensures that the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  height: 100vh; /* Set the height of the container to the full viewport height */
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #FDB9C8;
-  font-family: 'Fugaz One', sans-serif;
+  justify-content: center;
+
 }
+
 
 .container {
   text-align: center;
@@ -17,6 +32,7 @@ img {
   width: 150px;
   height: 150px;
   margin: 10px;
+  
 }
 
 
@@ -42,4 +58,19 @@ button {
 
 #noButton:hover {
   left: calc(100% - 100px); /* Move "No" button to the right edge on hover */
+}
+
+
+@media only screen and (max-width: 320px) {
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+   
+  }
 }
